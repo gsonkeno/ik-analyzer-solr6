@@ -39,18 +39,13 @@
 			<artifactId>lucene-analyzers-icu</artifactId>
 			<version>${lucene.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
-	<build>
-		<resources>
-			<resource>
-				<directory>src/main/java/org/wltea/analyzer/dic</directory>
-				<targetPath>org/wltea/analyzer/dic</targetPath>
-				<filtering>true</filtering>
-				<includes>
-					<include>*.dic</include>
-				</includes>
-			</resource>
-		</resources>
-	</build>
 </project>
